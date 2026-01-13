@@ -1,0 +1,21 @@
+.footer {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.footer-tagline {
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+    /* 14px */
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.footer-copyright {
+    color: var(--color-text-light);
+    font-size: 0.75rem;
+    /* 12px */
+    opacity: 0.7;
+}
