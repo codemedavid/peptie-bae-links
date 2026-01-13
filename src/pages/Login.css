@@ -1,0 +1,90 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    /* Use the same background as App if possible, or defined here */
+    background: var(--bg-gradient);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.login-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 300;
+    /* Light */
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-primary-dark);
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.login-input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(195, 158, 160, 0.2);
+}
+
+.login-button {
+    margin-top: 0.5rem;
+    padding: 0.875rem;
+    border-radius: 0.75rem;
+    background-color: var(--color-accent);
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.login-button:hover {
+    opacity: 0.9;
+}
+
+.login-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.login-error {
+    background-color: #fef2f2;
+    color: #ef4444;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    border: 1px solid #fee2e2;
+}
