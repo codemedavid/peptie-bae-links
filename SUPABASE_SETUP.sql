@@ -35,10 +35,11 @@ do $$
 begin
   if not exists (select 1 from links) then
     insert into links (text, href, icon, "order") values
-    ('Place Your Order', 'https://tiny.cc/paureorder', '🛒', 1),
-    ('Tirzepatide Overview (Full Product & Education Guide)', 'https://www.canva.com/design/DAG-M5mcJYU/LlFfBr5OHdBKYF1_mzoMoA/view?utm_content=DAG-M5mcJYU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h71df313386', '📘', 2),
-    ('Welcome Guide (Start Here)', 'https://tiny.cc/paureguide', '📖', 3),
-    ('Contact PAURE', 'https://tiny.cc/paurecontactus', '💬', 4),
-    ('Facebook — PAURE Wellness', 'https://www.facebook.com/paurewellness', '📘', 5);
+    ('Pricelist', 'https://www.canva.com/design/DAG9DQP5qtk/cb3QfT4fuJ4vlI6bjZ7c_A/edit', '📋', 1),
+    ('WhatsApp', 'https://wa.me/638980078807', '💬', 2),
+    ('Mobile', 'tel:09993904025', '📞', 3),
+    ('Messenger', 'https://m.me/889273047596403', '📨', 4),
+    ('TikTok', 'https://tiktok.com/@saepeptiebae', '🎵', 5),
+    ('Facebook', 'https://www.facebook.com/share/1AXAx5HUcJ/', '📘', 6);
   end if;
 end $$;

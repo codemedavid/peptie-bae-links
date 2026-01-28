@@ -18,7 +18,7 @@ const Home = () => {
 
   const fetchLinks = async () => {
     try {
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from('links')
         .select('*')
         .order('order', { ascending: true });
@@ -29,11 +29,12 @@ const Home = () => {
         // Fallback to initial links if DB is empty to ensure site works
         console.log('No links in DB, using fallback.');
         setLinks([
-          { text: 'Place Your Order', href: 'https://tiny.cc/paureorder', icon: '🛒' },
-          { text: 'Tirzepatide Overview (Full Product & Education Guide)', href: 'https://www.canva.com/design/DAG-M5mcJYU/LlFfBr5OHdBKYF1_mzoMoA/view?utm_content=DAG-M5mcJYU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h71df313386', icon: '📘' },
-          { text: 'Welcome Guide (Start Here)', href: 'https://tiny.cc/paureguide', icon: '📖' },
-          { text: 'Contact PAURE', href: 'https://tiny.cc/paurecontactus', icon: '💬' },
-          { text: 'Facebook — PAURE Wellness', href: 'https://www.facebook.com/paurewellness', icon: '📘' },
+          { text: 'Pricelist', href: 'https://www.canva.com/design/DAG9DQP5qtk/cb3QfT4fuJ4vlI6bjZ7c_A/edit', icon: '📋' },
+          { text: 'WhatsApp', href: 'https://wa.me/638980078807', icon: '💬' },
+          { text: 'Mobile', href: 'tel:09993904025', icon: '📞' },
+          { text: 'Messenger', href: 'https://m.me/889273047596403', icon: '📨' },
+          { text: 'TikTok', href: 'https://tiktok.com/@saepeptiebae', icon: '🎵' },
+          { text: 'Facebook', href: 'https://www.facebook.com/share/1AXAx5HUcJ/', icon: '📘' },
         ]);
       }
     } catch (error) {
@@ -65,10 +66,10 @@ const Home = () => {
         </div>
 
         <h1 className="brand-name">
-          PAURE
+          Peptie Bae
         </h1>
         <p className="brand-tagline">
-          peptides, redefined
+          glow. heal. repeat. ✨
         </p>
       </header>
 

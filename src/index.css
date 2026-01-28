@@ -1,16 +1,17 @@
 :root {
   /* Color Palette */
-  --color-primary: #F3E5E5;
-  --color-primary-dark: #EBD0D0;
-  --color-secondary: #FAF5F5;
-  --color-accent: #C39EA0;
+  /* Color Palette - Pink, White, Gold */
+  --color-primary: #FFF0F5; /* Lavender Blush */
+  --color-primary-dark: #FFB7C5; /* Cherry Blossom Pink */
+  --color-secondary: #FFFFFF; /* White */
+  --color-accent: #D4AF37; /* Gold */
   --color-text: #4A4A4A;
-  --color-text-light: #6B6B6B;
+  --color-text-light: #888888;
   --color-white: #FFFFFF;
   
   /* Gradients */
   --bg-gradient: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  --button-gradient: linear-gradient(90deg, rgba(243, 229, 229, 0.5) 0%, rgba(250, 245, 245, 0.8) 100%);
+  --button-gradient: linear-gradient(90deg, rgba(255, 240, 245, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
   
   /* Typography */
   --font-heading: 'Montserrat', sans-serif;

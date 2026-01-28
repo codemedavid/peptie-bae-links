@@ -13,6 +13,7 @@ const AdminDashboard = () => {
 
     useEffect(() => {
         checkUser();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const checkUser = () => {
@@ -54,6 +55,7 @@ const AdminDashboard = () => {
             if (error) throw error;
             setLinks(links.filter(link => link.id !== id));
         } catch (error) {
+            console.error('Error deleting:', error);
             alert('Error deleting link. Ensure database policies allow public writes.');
         }
     };
