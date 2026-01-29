@@ -106,6 +106,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="*" element={
+          <div style={{ textAlign: 'center', marginTop: '50px', color: 'white' }}>
+            <h1>404 - Page Not Found</h1>
+            <p>The page you are looking for does not exist.</p>
+            <a href="/" style={{ color: 'var(--color-primary)' }}>Go Home</a>
+          </div>
+        } />
       </Routes>
     </BrowserRouter>
   );
